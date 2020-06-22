@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+      crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/Semantic-UI-CSS-master/semantic.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LivreOr</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+          
+            </div>
+          </nav>
+          <div class="comments mt-5"style="width: 700px;margin-left:200px;">
+              <div class=" row comment">
+                 
+                  <div class="col-md-1 content mb-4">
+                    <a href="/message/<%= message.id %>"><i class="fa fa-user" style="font-size:60px;color:black;"></i></a>
+                  </div>
+                  <div class="col-md-7">
+                   <span><%= message.created_at.fromNow() %></span> 
+                    <p><%= message.content %></p>
+                  </div>
+                  </div>
+          </div>
+          </body>
+    </body>
+</html>
